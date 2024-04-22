@@ -1,0 +1,109 @@
+:root {
+  --jungle-green: #49A078FF;
+  --ivory: #FFFDEDFF;
+  --image-loader: rgb(93, 89, 122);
+  --rosy-brown: #B38D97FF;
+  --ultra-violet: #4F4789FF;
+  --dark-purple: #201335FF;
+}
+
+/* .NavDropdown:{
+  color: var(--rosy-brown);
+} */
+
+.body{
+  background-color: var(--ivory);
+  color: var(--dark-purple);
+}
+.container-alt{
+  background-color: var(--ultra-violet);
+  width: 100%;
+  margin-top: 16px ;
+}
+.container-alt h2, .container-alt p{
+  color: var(--ivory);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-purple);
+  font-family: 'Abhaya Libre';
+}
+
+
+.title {
+  color: var(--dark-purple);
+  font-size: 2em;
+}
+
+p {
+  color: var(--dark-purple);
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: var(--jungle-green);
+  color: var(--ivory);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--rosy-brown);
+}
+footer h5 {
+  color: var(--jungle-green);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+footer {
+  background-color: var(--dark-purple);
+  color: var(--ivory);
+  text-align: center;
+  padding: 16px;
+}
+
+
+.tutorial .card{
+  background-color: var(--ivory);
+  color: var(--ivory);
+  opacity: 1;
+  /* margin: 8px; */
+  padding: 0px;
+  box-shadow: var(--rosy-brown) 2px 2px 8px;
+}
+.tutorial .card p{
+  font-size: 1.0em;
+}
+
+.tutorial .card h2{
+  opacity: 1;
+  font-weight: semi-bold; 
+  font-size: 2.2em;
+  color: var(--rosy-brown);
+} 
+
+
+.hero {
+  padding: 16px;
+}
+/* .hero img {
+  box-shadow:var(--dark-purple) 3px 2px 20px;
+} */
+
+.dark-purple-bg {
+  background-color: var(--dark-purple);
+}
+
+.ivory-bg {
+  background-color: var(--ivory);
+}
+.rosy-brown-bg {
+  background-color: var(--rosy-brown);
+}
+
+.light-purple-bg {
+  background-color: var(--ultra-violet);
+}

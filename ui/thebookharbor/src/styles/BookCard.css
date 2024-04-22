@@ -1,0 +1,24 @@
+.card-subtext{
+  font-size: small;
+}
+
+.card {
+  background-color: var(--ultra-violet);
+  opacity: 0.85;
+  z-index: 0;
+  margin: 8px;
+  box-shadow: var(--ultra-violet) 2px 2px 8px;
+}
+  
+.card h3, .card p{
+  color: var(--ivory);
+}
+.card-header{
+  background-color: var(--ivory);
+}
+
+.book-title{
+  text-decoration: none;
+  color: var(--ivory);
+  font-size: large;
+}
