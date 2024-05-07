@@ -7,6 +7,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import { Link } from 'react-router-dom';
+import { colors } from '@mui/material';
 
 class ProfileDrawer extends Component {
   constructor(props) {
@@ -33,9 +34,10 @@ class ProfileDrawer extends Component {
 
     if (token === null) {
       return (
-        <Avatar
-          onClick={() => window.location.href = '/sign-in'}
-        />
+        <p 
+        style={{ color: 'var(--ivory)', textDecoration: 'underline', cursor: 'pointer', width: '100%', textAlign: 'end', fontSize: '1.2rem'}}
+        onClick={() => window.location.href = '/sign-in'}
+        className='px-4'>Sign in</p>
       );
     } else {
       return (

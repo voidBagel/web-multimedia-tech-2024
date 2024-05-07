@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import axios from 'axios'; // Import axios for HTTP requests
 import { Link } from 'react-router-dom';
+import { Row, Col} from 'react-bootstrap';
 import {AsyncImage} from 'loadable-image';
 import '../styles/BookCard.css';
 
@@ -24,7 +25,8 @@ const BookCard = ({ book }) => {
   }
 
   return (
-    <div className='card col-sm' style={{ width: '200px', height: '500px' }} onClick={navigateToDetails}> 
+    <div className='card col-sm' style={{ width: '200px', height: '500px' }} > 
+    <Link to={`/show-book-details/${book._id}`}>
     <AsyncImage
       className="card-img-top p-2"
       key={book._id}
@@ -32,13 +34,17 @@ const BookCard = ({ book }) => {
       loader={<div style={{ background: 'var(--image-loader)' }} />}
       style={{ width: '200px', height: '300px' }}
       />
-      
+     </Link> 
       <div className='desc card-body'>
         <h3>
           <Link className='book-title' to={`/show-book-details/${book._id}`}>{book.title}</Link>
         </h3>
         <p style={{ fontSize: '16px' }}>{book.author}</p>
-        <p className="card-subtext col">Posted by {user ? user.username : 'Unknown'}</p> {/* Display user data */}
+
+        <Row>
+        <Link className="card-subtext ivory-text hover-underline" to={`/profile/${user ? user._id:'Unknown'}`}>Posted by {user ? user.username : 'Unknown'}</Link> {/* Display user data */}
+        </Row>
+
       </div>
     </div>
   );

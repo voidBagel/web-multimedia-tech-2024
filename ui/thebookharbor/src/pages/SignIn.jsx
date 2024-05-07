@@ -78,9 +78,9 @@ const SignIn = () =>{
                 </div>
                 </Row>
                 </form>
+               <p style={{fontSize: '1rem', padding:'8px'}}>Don't have an account? <a href="/sign-up">Register now!</a></p>
                 </Col>
-            </Row>
-            
+            </Row>            
         </Card>
         <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>
         <div className="alert alert-danger">{error}</div>

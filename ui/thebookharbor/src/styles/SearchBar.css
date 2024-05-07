@@ -8,3 +8,16 @@
     background-color: '#f2f2f2';
     
   }
+
+.search-dropdown{
+    position: absolute;
+    width: 500px;
+    background-color: white;
+    z-index: 10;
+    margin-top: 8px;
+    right: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 8px;
+    font-size: small;
+}

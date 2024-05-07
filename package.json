@@ -3,6 +3,8 @@
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "jsonwebtoken": "^9.0.2",
-    "loadable-image": "^3.2.3"
+    "jwt-decode": "^4.0.0",
+    "loadable-image": "^3.2.3",
+    "mdb-react-ui-kit": "^8.0.0"
   }
 }
